@@ -40,7 +40,8 @@ main{
     font-size: 55px;
 }
 .div2{
-    background-color: rgb(221, 221, 194);
+       background-color:rgb(163, 161, 156);
+
    
     
     

@@ -1,6 +1,5 @@
 <template>
   <navBar/>
-  
   <router-view/>
   <footerComp/>
 </template>
@@ -10,7 +9,7 @@ import footerComp from './components/footerComp.vue';
 export default {
   components: {
     navBar,
-    footerComp
+    footerComp,
   }
 }
 
@@ -23,6 +22,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Orphenus';
+
+  
 }
 #app{
   display: grid;
@@ -31,6 +32,7 @@ export default {
 }
 #app>*{
   grid-column: -1/1;
+
 
 }
 
