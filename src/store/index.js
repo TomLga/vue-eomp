@@ -5,7 +5,8 @@ const fromJson = "https://tomlga.github.io/EompServerVue/data.json"
 export default createStore({
   state: {
     Testermonals:"",
-    education:""
+    education:"",
+    projects:""
 
   },
 
@@ -19,6 +20,9 @@ export default createStore({
     },
     setEducation(state, education){
       state.education =education
+    },
+    setProjects(state, projects){
+      state.projects = projects
     }
   },
   actions: {
