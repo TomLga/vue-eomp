@@ -1,16 +1,27 @@
 <template>
-  <div class="home">
-    <h1>WELCOME</h1>
+  <div >
+    <landingPage/>
+    <landingDiv/>
+
   </div>
 </template>
 
 
 
 <script>
+import landingPage from '../components/landingPage.vue';
+import landingDiv from '@/components/landingDiv.vue';
+
+
 export default{
-  comments:{
+  components:{
+    landingPage,
+    landingDiv
+  },
 
-  }
-}
+    }
+    </script>
 
-</script>
+<style>
+
+</style>
