@@ -1,64 +1,49 @@
-import { createStore } from 'vuex'
-
-const fromJson = "https://tomlga.github.io/EompServerVue/data.json"
-
+import { createStore } from 'vuex';
+const dataServer = "https://tomlga.github.io/EompServerVue/data.json";
 export default createStore({
   state: {
-    Testermonals:"",
-    education:"",
-    projects:""
-
+    Testermonals: ""
   },
-
-  getters: {
-  },
-
-
   mutations: {
-    setTestermonals(state,Testermonals){
-      state.Testermonals = Testermonals
-    },
-    setEducation(state, education){
-      state.education =education
-    },
-    setProjects(state, projects){
-      state.projects = projects
+    setTestermonals(state, Testermonals) {
+      state.Testermonals = Testermonals;
     }
   },
   actions: {
-    async fecthTestermonals (context){
-      try{
-        let statements = await fetch (fromJson)
-        let {Testermonals} = await statements.json()
-        if (Testermonals){
-          context.commit ('setTestermonals', Testermonals)
-        } else{
-          context.commit ('setSpinner', true)
+    async fetchTestermonals(context) {
+      try {
+        let statements = await fetch(dataServer);
+        let { Testermonals } = await statements.json();
+        if (Testermonals) {
+          context.commit('setTestermonals', Testermonals);
+        } else {
+          alert('Fetching data... Please wait.');
         }
-      } catch(e){
-        console.log(e.message)
-      }
-    },
-    
-    async fecthEducation (context){
-      try{
-        let edu = await fetch (fromJson)
-        let {education} = await edu.json()
-        if (education){
-          context.commit ('setEducation', education)
-        } else{
-          context.commit ('setSpinner', true)
-        }
-      } catch(e){
-        console.log(e.message)
+      } catch (e) {
+        console.log(e.message);
       }
     }
-    
   },
+  modules: {}
+});
 
 
 
 
-  modules: {
-  }
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

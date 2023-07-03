@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
             <div class="card" v-for="info in Testermonals" :key="info.id" style="width: 18rem;">
-  <img src="https://i.postimg.cc/7YZy1Mr2/css-logo.png" class="card-img-top" alt="...">
+  <img src="" class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">{{info.name}}</h5>
     <p class="card-text">{{info.msg}}</p>
@@ -25,12 +25,16 @@
             }
         },
         mounted(){
-            this.$store.dispatch('fecthTestermonals ')
+            this.$store.dispatch('fetchTestermonals')
         }
         
     }
 </script>
 
 <style scoped>
+.container{
+    background: #8a2c2c;
+}
+
 
 </style>
