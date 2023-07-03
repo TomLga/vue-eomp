@@ -40,6 +40,7 @@ img{
 }
 .navbar{
     background-color: rgb(64, 68, 67);
+ 
 }
 .links{
     color: white;
