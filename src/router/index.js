@@ -33,6 +33,18 @@ const routes = [
     component: () => import('../views/ContactView.vue')
   },
   
+  {
+    path: '/education',
+    name: 'education',
+    component: () => import('../components/ResEducation.vue')
+  },
+  {
+    
+    path: '/workExp',
+    name: 'work comp',
+    component: () => import('../components/workComp.vue')
+  }
+  
 
 
 ]

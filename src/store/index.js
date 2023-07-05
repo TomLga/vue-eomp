@@ -3,7 +3,9 @@ let dataServer = "https://tomlga.github.io/EompServerVue/data.json";
 export default createStore({
   state: {
     testimonials: null,
-    projects: null
+    projects: null,
+    education: null,
+    work: null
 
 
   },
@@ -13,6 +15,12 @@ export default createStore({
     },
     setProjects(state, projects){
       state.projects =projects
+    },
+    setEducation(state, education){
+      state.education = education
+    },
+    setWork(state, work){
+      state.work = work
     }
   },
   actions: {
@@ -30,7 +38,7 @@ export default createStore({
         console.log(e.message);
       }
     },
-
+//projects
     async fetchProjects (context){
       try{
         let pro =await fetch (dataServer);
@@ -38,6 +46,30 @@ export default createStore({
         if (projects){
           context.commit ('setProjects', projects);
 
+        }
+      } catch(e){
+        console.log(e.message);
+      }
+    },
+
+    //education 
+    async fetchEducation (context){
+      try{
+        let edu = await fetch(dataServer)
+        let {education} = await edu.json()
+        if (education){
+          context.commit ('setEducation', education)
+        }
+      } catch (e){
+        console.log(e.message)
+      }
+    },
+    async fetchWork (context){
+      try{
+        let jobs = await fetch (dataServer)
+        let {work} = await jobs.json();
+        if(work){
+          context.commit ('setWork', work)
         }
       } catch(e){
         console.log(e.message);
