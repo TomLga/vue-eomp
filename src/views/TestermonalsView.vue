@@ -1,40 +1,24 @@
 <template>
-    <div>
-        <h1>TESTERMONALS</h1>
-      <div class="container">
-        <div class="row">
-            <div class="card" v-for="info in Testermonals" :key="info.id" style="width: 18rem;">
-  <img src="" class="card-img-top">
-  <div class="card-body">
-    <h5 class="card-title">{{info.name}}</h5>
-    <p class="card-text">{{info.msg}}</p>
-  </div>
-</div>
-</div>
-</div>
+    <div class="TestView">
+     <TestimonialsComp/>
     </div>
 
 
 </template>
 
 <script>
+import TestimonialsComp from '@/components/TestimonialsComp.vue';
     export default {
-        computed:{
-            Testermonals(){
-                return this.$store.state.Testermonals
-            }
-        },
-        mounted(){
-            this.$store.dispatch('fetchTestermonals')
+        components:{
+            TestimonialsComp
         }
-        
     }
 </script>
 
 <style scoped>
-.container{
-    background: #8a2c2c;
+.TestView{
+    background-image: url('https://i.postimg.cc/BQ1cPMfy/Untitled-design.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
 </style>

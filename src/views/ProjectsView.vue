@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="project">
         <h1>PROJECTS</h1>
         <projectsComp/>
 
@@ -19,5 +19,9 @@ import projectsComp from '@/components/projectsComp.vue';
 </script>
 
 <style scoped>
-
+.project{
+    background-image: url('https://i.postimg.cc/BQ1cPMfy/Untitled-design.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 </style>
