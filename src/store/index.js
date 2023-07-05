@@ -1,29 +1,64 @@
 import { createStore } from 'vuex';
-const dataServer = "https://tomlga.github.io/EompServerVue/data.json";
+let dataServer = "https://tomlga.github.io/EompServerVue/data.json";
 export default createStore({
   state: {
-    Testermonals: ""
+    testimonials: null,
+    projects: null
+
+
   },
   mutations: {
-    setTestermonals(state, Testermonals) {
-      state.Testermonals = Testermonals;
+    setTestimonials(state, testimonials) {
+      state.testimonials = testimonials;
+    },
+    setProjects(state, projects){
+      state.projects =projects
     }
   },
   actions: {
-    async fetchTestermonals(context) {
+    //Testimonials
+    async fetchTestimonials(context) {
       try {
         let statements = await fetch(dataServer);
-        let { Testermonals } = await statements.json();
-        if (Testermonals) {
-          context.commit('setTestermonals', Testermonals);
+        let { testimonials } = await statements.json();
+        if (testimonials) {
+          context.commit('setTestimonials', testimonials);
         } else {
           alert('Fetching data... Please wait.');
         }
-      } catch (e) {
+      } catch(e) {
+        console.log(e.message);
+      }
+    },
+
+    async fetchProjects (context){
+      try{
+        let pro =await fetch (dataServer);
+        let {projects} = await pro.json()
+        if (projects){
+          context.commit ('setProjects', projects);
+
+        }
+      } catch(e){
         console.log(e.message);
       }
     }
+
+
+
+
+
+
+
+
   },
+
+
+
+
+
+
+
   modules: {}
 });
 
