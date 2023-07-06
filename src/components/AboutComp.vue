@@ -28,7 +28,7 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/resume">Resume</a></li>
           <li><a class="dropdown-item" href="/projects">Projects</a></li>
-          <li><a class="dropdown-item" href="/testermonals">Testermonals</a></li>
+          <li><a class="dropdown-item" href="/testermonals">Testimonials</a></li>
         </ul>
       </div>
 </div>

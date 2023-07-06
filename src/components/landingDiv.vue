@@ -13,7 +13,7 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">ABOUT ME </h5>
-              <p class="card-text">I am Logan Thomas, Aspring Web developer<br><br>
+              <p class="card-text" style="width: 25rem;">I am Logan Thomas, Aspring Web developer<br><br>
                 I am an avid learner and continuously seek out new knowledge and skills to stay ahead in an ever-evolving world....</p>
             </div>
             <button>
@@ -42,7 +42,7 @@ h1{
     padding: 2rem;
    
 }
-.card-text{
+.card-textSml{
     font-size: 20px;
 }
 

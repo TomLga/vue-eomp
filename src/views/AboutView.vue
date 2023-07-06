@@ -1,7 +1,7 @@
 <template>
   <div class="about">
  
-    <h1>ABOUT PAGE</h1>
+   
     <AboutComp/>
   </div>
 </template>
