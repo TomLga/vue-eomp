@@ -1,7 +1,7 @@
 <template>
  <main>
         <div class="container">
-           <p>WELCOME TO MY PORTFOLIO </p>
+           <p id="typewriter">WELCOME TO MY PORTFOLIO </p>
         </div>
 
        
@@ -41,10 +41,6 @@ main{
 }
 .div2{
        background-color:rgb(163, 161, 156);
-
-   
-    
-    
 }
 button{
     margin: 20px;
@@ -54,4 +50,34 @@ button{
 .arrowRight{
   margin-left: 30%;
 }
+
+@keyframes typing {
+    0%{
+        width: 10%;
+    }
+    100%{
+        width: 80%;
+    }
+  } 
+  
+  #typewriter {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .15em;
+    animation: typing 1.4s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+   0% {
+     border-color: transparent;
+     }
+   50%{
+    transform: rotate(1deg);
+   }
+    100%{
+        border-color: transparent;
+    }
+  }
 </style>
