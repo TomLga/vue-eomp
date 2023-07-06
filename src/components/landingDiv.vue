@@ -47,12 +47,11 @@ h1{
 }
 
 .wholeThing{
-    width: 600px;
+    width: 700px;
     margin: auto;
-    height: 86vh;
+    
 
     
 }
 
 </style>
-<!-- checkout pop overs in bs -->
