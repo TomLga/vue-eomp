@@ -9,8 +9,11 @@
         </div>
 
         <div class="infoText">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates soluta, accusamus modi harum praesentium maxime, dolores sed culpa animi, ad dolorem illum? Itaque adipisci doloremque ratione illo inventore, laudantium nihil!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta veniam perferendis qui nostrum dolor rem ipsa, dignissimos incidunt tenetur officiis, consequuntur animi possimus sunt repudiandae earum ut cumque molestiae quia?</p>
+            <p>I am a passionate and driven individual with a strong desire to have a better future. With a background in Web develompent I have gained the knownlegde and understanding of the basics in web development with a lot of room to grow. I am constantly seeking opportunities to learn, grow, and challenge myself both personally and professionally.</p>
+                <p>     
+                I thrive in dynamic environments where creativity and innovation are valued. I believe in the power of collaboration and enjoy working with diverse teams to solve problems and achieve shared goals.
+                </p>
+            
         </div>
         
 
