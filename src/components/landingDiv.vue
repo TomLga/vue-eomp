@@ -13,7 +13,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">ABOUT ME </h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, vero excepturi laborum non modi rem labore id reiciendis ab, quasi qui doloremque delectus repellendus. Provident eum iste a excepturi earum?....</p>
+              <p class="card-text">I am Logan Thomas, Aspring Web developer<br><br>
+                I am an avid learner and continuously seek out new knowledge and skills to stay ahead in an ever-evolving world....</p>
             </div>
             <button>
               <router-link class="links" to="/about">Read more..</router-link>

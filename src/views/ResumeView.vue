@@ -3,9 +3,8 @@
     <div class="resume">
        
     <h1>RESUME</h1>
-    <h3>Education</h3>
-    <ResEducation/>
-    <workComp/>
+    <basicInfo/>
+    
     
    
     
@@ -14,12 +13,10 @@
 
 <script>
 
-import ResEducation from '@/components/ResEducation.vue';
-import workComp from '@/components/workComp.vue';
+import basicInfo from '@/components/basicInfo'
     export default {
     components: { 
-        ResEducation,
-        workComp,
+        basicInfo
         
     }
 }

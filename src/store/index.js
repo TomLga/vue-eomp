@@ -5,7 +5,8 @@ export default createStore({
     testimonials: null,
     projects: null,
     education: null,
-    work: null
+    work: null,
+    resume:null
 
 
   },
@@ -21,6 +22,9 @@ export default createStore({
     },
     setWork(state, work){
       state.work = work
+    },
+    setResume(state, resume){
+      state.resume = resume
     }
   },
   actions: {
@@ -74,7 +78,19 @@ export default createStore({
       } catch(e){
         console.log(e.message);
       }
+    },
+
+async fetchResume (context){
+  try{
+    let cv = await fetch (dataServer)
+    let {resume} = await cv.json()
+    if(cv){
+      context.commit ('setResume', resume)
     }
+  } catch(e){
+    console.log (e.message)
+  }
+}
 
 
 

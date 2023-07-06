@@ -1,27 +1,122 @@
-<template>
 
+<template>
+  
   <div class="container">
     <div class="row">
-        <div class="card" v-for="pro in projects" :key="pro.id">
-<img src="https://i.postimg.cc/Fs7QznXb/stick-man.png" class="card-img-top">
-<div class="card-body">
-<h5 class="card-title">{{pro.name}}</h5>
-<p class="card-text">{{pro.gitLink}}</p>
-<button class="btnLinks"><a href="#">github repo</a></button>
-<button class="btnLinks"><a href="#">Netilfy live view</a></button>
-</div>
-</div>
-</div>
-</div>
+    <div class="flip-card"  v-for="task in projects" :key="task.id">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+          <h1>{{ task.name }}</h1>
+          <div >
+              <img id="imgContainer" :src=task.image>
+          </div>
 
-            
+          <span>more info...</span>
+          
+          </div>
+          <div class="flip-card-back">
+              <p>{{ task.name }}</p> 
+            <button> {{ task.gitLink }}</button> 
+            <button>{{ task.netLink }}</button> 
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  
 
+ 
 </template>
+
+<style>
+.container{
+  display: flex;
+}
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  margin: 12px auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#imgContainer{
+    position: absolute;
+    width: 10rem;
+    bottom: 70px;
+    left: 90px;
+ 
+}
+
+span{
+   position: absolute;
+    bottom: 10px;
+    float:start;
+    font-style: italic;
+    right: 20px;
+}
+
+@media only screen and (max-width: 400px){
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin: 12px auto;
+  }
+  #imgContainer{
+    position: absolute;
+    width: 8rem;
+    bottom: 100px;
+    left: 80px;
+ 
+}  
+}
+  
+
+</style>
+<!-- fix postion of image  -->
+
 
 <script>
     export default {
       computed:{
-            projects(){
+        projects(){
                 return this.$store.state.projects
             }
         },
@@ -32,49 +127,3 @@
         
     }
 </script>
-
-<style scoped>
-img{
-  width: 13rem;
-  margin: auto;
-}
-.btnLinks{
-  padding: 3px;
-  margin: 4px;
-  background: #b4acac;
-}
-.btnLinks >a{
-  text-decoration: none;
-  color: black;
-  padding: 3px;
-  
-}
-.card{
-  width: 23rem;
-  height: 23rem;
-  margin: 9px auto;
-
- 
- 
-
-}
-.container{
-  display: flex;
-}
-
-.card-text{
-  font-size: 14px;
-}
-
-
-@media only screen and (max-width: 390px){
-  .card{
-    width: 13rem;
-    height: 13rem;
-    margin: 4px auto;
-  }
-  img{
-  display: none;
-  }
-}
-</style>
