@@ -1,6 +1,6 @@
 <template>
   
-    <div class="card text-center">
+    <div id="cardOver" class="card text-center">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
@@ -59,6 +59,7 @@ export default{
 </script>
 
 <style>
+
 .card-body{
   width: 59rem;
   margin: auto;
@@ -84,7 +85,7 @@ span{
  text-align: start;
   font-size:20px;
   width: 60rem;
-  background-color: aquamarine;
+ 
 }
 
 }
@@ -94,7 +95,7 @@ span{
  text-align: start;
   font-size:20px;
   width: 40rem;
-  background-color: rgb(100, 196, 40);
+
 }
 .card-body{
   width: 39rem;
@@ -107,7 +108,7 @@ span{
  text-align: start;
   font-size:18px;
   width: 30rem;
-  background-color: rgb(137, 169, 115);
+
 }
 .card-body{
   width: 29rem;
@@ -120,7 +121,7 @@ span{
 
   width: 18rem;
   font-size: 17px;
-  background-color: rgb(137, 169, 115);
+  
 
   
 }
@@ -134,7 +135,7 @@ span{
 
   width: 17rem;
   font-size: 16px;
-  background-color: rgb(137, 169, 115);
+;
   padding: 3px;
 }
 .card-body{

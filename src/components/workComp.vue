@@ -59,13 +59,23 @@ export default{
 }
 .card-textWork{
   font-size: 25px;
-
-
 }
 @media only screen and (max-width:960px)
 {
   .card-bodyWork{
     margin: 9px auto;
+  }
+
+}
+
+@media only screen and (max-width:520px){
+  #rowWork{
+    width:90%;
+
+    margin: auto;
+  }
+  .card-textWork, .card-titleWork{
+    font-size:20px;
   }
 }
 </style>

@@ -2,23 +2,21 @@
 
     <div class="resume">
        
-    <h1>RESUME</h1>
+
     <basicInfo/>
-    
-    
-   
-    
+    <SkillsComp/>
 </div>
 </template>
 
 <script>
 
 import basicInfo from '@/components/basicInfo'
+import SkillsComp from '@/components/skillsComp.vue';
     export default {
-    components: { 
-        basicInfo
-        
-    }
+    components: {
+    basicInfo,
+    SkillsComp
+}
 }
 </script>
 

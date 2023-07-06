@@ -1,6 +1,5 @@
 <template>
     <div class="project">
-        <h1>PROJECTS</h1>
         <projectsComp/>
 
 
