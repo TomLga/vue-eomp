@@ -1,8 +1,9 @@
 <template>
   <div class="about">
  
-   
+   <div class="active">
     <AboutComp/>
+  </div>
   </div>
 </template>
 <script>
@@ -22,5 +23,4 @@ export default{
  background-repeat: no-repeat;
  background-size: cover;
 }
-
 </style>

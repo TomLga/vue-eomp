@@ -1,8 +1,9 @@
 <template>
  <main>
         <div class="container">
-           <p id="typewriter">WELCOME TO MY PORTFOLIO </p>
-        </div>
+           <p id="typewriter">WELCOME TO MY PORTFOLIO </p> 
+      
+          </div>
 
        
     </main>
@@ -80,4 +81,19 @@ button{
         border-color: transparent;
     }
   }
+
+  @media only screen and (max-width: 1200px){
+    #typewriter{
+      font-size: 2rem;
+      white-space: wrap;
+      text-align: center;
+
+      
+     
+    }
+
+  }
+
+
+  
 </style>

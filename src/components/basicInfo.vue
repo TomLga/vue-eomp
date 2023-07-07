@@ -38,8 +38,10 @@
             <p class="card-text">{{ res.basicInfo }}</p>
           </div>
 
-          <p class="card-textMoti">{{ res.motivation}}</p>
-          <a href="#" class="btn btn-primary">View Cv</a>
+          <p id="cardSlidUp" class="card-textMoti">{{ res.motivation}}</p>
+          <a href="https://drive.google.com/file/d/1JAu2E-zlseHNLwE-t8gpo2Y7Tn7G0tlv/view?usp=sharing" target="_blank">
+            <button id="btnSub" type="submit" >View CV</button>
+          </a>
         </div>
       </div>
 </template>
@@ -79,6 +81,39 @@ span{
   font-size: 30px;
  
  
+}
+#cardSlidUp {
+  border-radius: 10px;
+  position: relative;
+  animation: slide-up 1s forwards;
+  opacity: 0;
+}
+
+#btnSub{
+  margin: 9px;
+
+  padding: 5px;
+  color: rgb(7, 7, 7);
+  font-style: italic;
+
+}
+#btnSub:hover{
+  background-color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
+  outline-style:inset;
+  outline-color: rgb(0, 0, 0);
+  transform: rotate(10deg);
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media only screen and (max-width:1320px){
   .card-textMoti{

@@ -1,22 +1,23 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 
-/* @keyframes slideOut {
+@keyframes slideOutAnime {
     0% { 
-      transform: translateX(-100%); opacity: 0.40;
+      transform: translateX(-100%); opacity: 1;
    }
  
    80%{
-      opacity: 0.20;
+      opacity:0 ;
       transform: rotate(-35deg);
    }
   
     100% { transform: translateX(0%); opacity: 1; }
   }
-  
 
-  .card {
+  #slideOutAnimation {
   
-    background-color: #f1f1f1;
-    animation: slideOut 2s ease-in-out forwards;
-  } */
+    animation: slideOutAnime 2s ease-in-out backwards;
+  }
+
+   
+  
