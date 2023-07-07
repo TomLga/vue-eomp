@@ -1,12 +1,9 @@
 <template>
  <main>
-        <div class="container">
-           <p id="typewriter">WELCOME TO MY PORTFOLIO </p> 
-      
-          </div>
-
-       
-    </main>
+   <div class="container">
+     <p id="typewriter">WELCOME TO MY PORTFOLIO </p> 
+    </div>        
+        </main>
     
  
 </template>
@@ -14,6 +11,7 @@
 <script>
 
     export default {
+
  
     }
 </script>
@@ -25,7 +23,7 @@ main{
 }
 .container{
     width: 100%;
-    height:700px;
+    height:900px;
    
     background-image: url('https://i.postimg.cc/d1yZr4Yf/mountain-icey.jpg');
     background-position: center;

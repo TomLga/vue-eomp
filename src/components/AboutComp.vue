@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="mePic">
-            <img src="https://i.postimg.cc/nr3T4jTW/logan-port-pciture-crop.jpg" style="width: 25rem;" alt="" srcset="">
+            <img id="myImg" src="https://i.postimg.cc/nr3T4jTW/logan-port-pciture-crop.jpg" alt="" srcset="">
 
         </div>
 
@@ -28,7 +28,7 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/resume">Resume</a></li>
           <li><a class="dropdown-item" href="/projects">Projects</a></li>
-          <li><a class="dropdown-item" href="/testermonals">Testimonials</a></li>
+          <li><a class="dropdown-item" href="/testermonals">Testimonial</a></li>
         </ul>
       </div>
 </div>
@@ -77,12 +77,11 @@ margin:auto;
     align-items: center;
     justify-content: center;
     display: flex;
-  
 }
-
-
-
-
+#myImg{
+    width: 23rem;
+    border-radius: 20px;
+}
 
 
 
@@ -92,11 +91,11 @@ margin:auto;
 
 @media only screen and (max-width: 600px) {
 
-    img{
-        width: 3rem;
+    #myImg{
+        width: 13rem;
     }
     p{
-        font-size: 20px;
+        font-size:15px;
     }
     .dropBtn{
         margin-left:30% ;
@@ -104,7 +103,7 @@ margin:auto;
     
 }
 @media only screen and (max-width: 923px) {
-    img{
+    #mePic{
         width: 6rem;
     }
 }

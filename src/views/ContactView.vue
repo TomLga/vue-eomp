@@ -7,30 +7,45 @@
         
         <div class="ContactForm">
             <label>Name</label>
-            <input type="text"  name="Name" class="form-control" placeholder="e.g Jeffy" aria-label="Name" required>
+            <input type="text"  name="Name" class="form-control" placeholder="e.g Jeffy" aria-label="Name" required minlength="1"
+           
+            oninvalid="this.setCustomValidity('Please Enter Your Name')"
+            oninput="this.setCustomValidity('')">
           
             <label>Email</label>
-            <input type="email" name="email" class="form-control" placeholder="e.g loganThomas@gmail.com" aria-label="Email" required>
+            <input type="email" name="email" class="form-control" placeholder="e.g loganThomas@gmail.com" aria-label="Email"  required minlength="1"
+           
+            oninvalid="this.setCustomValidity('Please Enter Your Vaild Email')"
+            oninput="this.setCustomValidity('')">
           
             <label>Message</label>
-            <textarea type="text" name="msg" class="form-control" placeholder="Text" required></textarea>
+            <textarea type="text" name="msg" class="form-control" placeholder="Text" required minlength="1"
+           
+            oninvalid="this.setCustomValidity(At least 1 char is needed')"
+            oninput="this.setCustomValidity('')"></textarea>
         
-          <button id="btnSub" type="submit" >SUBMIT</button>
+          <button id="btnSub1" type="submit" >SUBMIT</button>
         </div>
     
         </form>
         <div class="extraContact">
-            <p>Contact Me Directly:</p>
+            <div class="infoContact">
+            <p style="text-decoration: underline; font-size: 20px; margin:auto;">Contact Me Directly:</p>
+            <P>Email: llogantthomas2@gmail.com</P>
+           
+            <p>Call me: +27 067 627 3770</p>
+           </div>
 
             <div class="smallbox">
               <a href="https://api.whatsapp.com/send?phone=270676273770" target="_blank">
-                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-whatsapp fa-3x " style="color: #38db0a;"></i>
+        
               </a>
               <a href="https://www.linkedin.com/in/your_profile" target="_blank">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin fa-3x" ></i>
               </a>
-              <a href="https://github.com/your_username" target="_blank">
-                <i class="fab fa-github"></i>
+              <a href="https://github.com/TomLga" target="_blank">
+                <i class="fab fa-github fa-3x" style="color: rgb(255, 255, 255)"></i>
               </a>
             </div>
     
@@ -82,7 +97,7 @@ label{
 input{
     height: 3rem;
 }
- #btnSub{
+ #btnSub1{
     margin: 9px;
     outline-style: dashed;
     outline-color: rgb(255, 255, 255);
@@ -92,7 +107,7 @@ input{
     font-style: italic;
 
 }
-#btnSub:hover{
+#btnSub1:hover{
     background-color: white;
     color: black;
     outline-style:inset;
@@ -101,14 +116,27 @@ input{
 }
 
 .extraContact{
-    width: 15rem;
+    width:30%;
+  
     border: 5px solid ;
     padding: 9px;
     margin: 9px auto;
+    background: #000000;
     
     
 }
+.fab{
+margin: auto;
+}
+.fab:hover{
+    transform: rotate(15deg);
 
+}
+.infoContact{
+    margin: auto;
+    background: #000000;
+    color: white;
+}
 @media only screen and (max-width: 1120px) {
     .ContactForm {
        width: 50rem;
@@ -132,6 +160,10 @@ input{
     .form-control{
         width: 29rem;
     }
+    .extraContact{
+        width:fit-content;
+     
+    }
   }
 @media only screen and (max-width: 490px) {
     .ContactForm {
@@ -140,6 +172,11 @@ input{
     .form-control{
         width: 23rem;
     }
+    .extraContact{
+        width:fit-content;
+     
+    }
+
   }
 @media only screen and (max-width: 390px) {
     .ContactForm {

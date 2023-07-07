@@ -50,9 +50,9 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://i.postimg.cc/T1Gs9MSm/mysql.png" class="card-img-topSkills" alt="MySQL Logo">
+            <img src="https://i.postimg.cc/pL59jPbC/vue-js-logo.png" style="width: 9rem;" class="card-img-topSkills" alt="MySQL Logo">
             <div class="card-bodySkills">
-              <p class="card-textSkills">-Beginner</p>
+              <p  class="card-textSkills">-Fundamental</p>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
 <style>
 
 .card-textSkills{
-  width: 6rem;
+  width: 7rem;
   font-style: italic;
   margin-left: 9px;
   font-size: 17px;

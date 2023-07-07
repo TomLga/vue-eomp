@@ -15,7 +15,7 @@
                  <router-link class="links" to="/about">About</router-link>
                  <router-link class="links" to="/resume">Resume</router-link>
                  <router-link class="links" to="/projects">Projects</router-link>
-                 <router-link class="links" to="/testermonals">Testimonials</router-link>
+                 <router-link class="links" to="/testermonals">Testimonial</router-link>
                  <router-link class="links" to="/contact">Contact</router-link>
                  
                

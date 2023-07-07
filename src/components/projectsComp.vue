@@ -11,7 +11,7 @@
               <img id="imgContainer" :src=task.image>
           </div>
 
-          <span>more info...</span>
+          <span id="moreInfo">more info...</span>
           
           </div>
           <div class="flip-card-back">
@@ -90,7 +90,7 @@
  
 }
 
-span{
+#moreInfo{
    position: absolute;
     bottom: 10px;
     float:start;

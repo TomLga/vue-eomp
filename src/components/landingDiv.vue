@@ -1,6 +1,7 @@
 <template>
    
-  <main  class="landingDivBG ">
+  <main>
+    <div  class="landingDivBG ">
       <h1>I'M LOGAN THOMAS - WELCOME TO MY PORTFOLIO</h1>
 
    
@@ -16,7 +17,7 @@
           <div id="cardLanding" class="col-md-8">
             <div id="slideOutAnimatio"  class="card-body">
               <h5 class="card-title">ABOUT ME </h5>
-              <p  id="textsmll" class="card-text">I am Logan Thomas, <Span style="font-style:italic; font-size: 25px;">Aspring Web developer</Span> <br><br>
+              <p  id="textsmll" class="card-textLand">I am Logan Thomas, <Span style="font-style:italic; font-size: 25px;">Aspring Web developer</Span> <br><br>
                 I am an avid learner and continuously seek out new knowledge and skills to stay ahead in an ever-evolving world....</p>
             </div>
             <button>
@@ -28,6 +29,7 @@
       </div>
 
     </div>
+  </div>
   </main>
 </template>
 
@@ -60,9 +62,14 @@ h1{
 }
 
 .landingDivBG{
-  background-image: url('https://i.postimg.cc/BQ1cPMfy/Untitled-design.png');
-  
-  background-size:cover;
+  width: fit-content;
+  margin: auto;
+  background: rgba(8, 8, 8, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(218, 21, 21, 0.53);
 }
 @media only screen and (max-width: 790px){
   .wholeThing{
