@@ -1,7 +1,7 @@
 <template>
     <div>
      
-      <div id="slideOutAnimatio" class="container">
+      <div id="slideOutAnimation" class="container">
         <div id="rowTest" class="row">
             <div id="cardTest" class=" card" v-for="test in testimonials" :key="test.id" style="width: 18rem;">
   <img :src="test.image" style="width:16rem; margin:9px auto" >

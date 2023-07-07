@@ -3,13 +3,13 @@
       <div id="tabs" class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
-            <router-link class="nav-link" to="/resume">basic Info</router-link> 
+            <router-link class="nav-link" to="/resume">Basic Information</router-link> 
           </li>
           <li class="nav-item active">
             <router-link class="links nav-link active" to="/education">Education</router-link>
           </li>
           <li class="nav-item active">
-            <router-link class="links nav-link" to="/workExp">Work exp </router-link>
+            <router-link class="links nav-link" to="/workExp">Work Experience </router-link>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 <template>
     <footer class="container-fluid"> 
-    <!-- <i>desginged and code by Logan Thomas</i> put this in smaller text -->
+  
     <div class="row">
        <p> COPYRIGHT &COPY; {{ Year }}</p> 
     </div>

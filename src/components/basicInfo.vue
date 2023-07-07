@@ -4,13 +4,13 @@
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <router-link class="nav-link active" to="/re">basic Info</router-link> 
+              <router-link class="nav-link active" to="/re">Basic Information</router-link> 
             </li>
             <li class="nav-item active">
               <router-link class="links nav-link" to="/education">Education</router-link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" aria-current="true" href="/workExp">Work Experince</a>
+              <a class="nav-link" aria-current="true" href="/workExp">Work Experience</a>
             </li>
           </ul>
         </div>
@@ -25,7 +25,7 @@
         <!-- email -->
           <div class="d-flex gap-2 justify-content-center">
             <i class="bi bi-envelope-at"></i>
-            <span>{{ res.email }}</span>
+            <span id="emailSpan">{{ res.email }}</span>
           </div>
           <!-- number -->
           <div class="d-flex gap-2 justify-content-center">
@@ -67,7 +67,7 @@ export default{
   margin: auto;
  
 }
-span{
+#emailspan{
   font-style: italic;  
  
 }
