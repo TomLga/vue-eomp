@@ -4,8 +4,8 @@
     <div class="container">
 
         <div class="mePic">
-            <img src="https://i.postimg.cc/Fs7QznXb/stick-man.png" alt="" srcset="">
-            <img src="https://i.postimg.cc/Fs7QznXb/stick-man.png" alt="" srcset="">
+            <img src="https://i.postimg.cc/nr3T4jTW/logan-port-pciture-crop.jpg" style="width: 25rem;" alt="" srcset="">
+
         </div>
 
         <div class="infoText">
@@ -77,6 +77,7 @@ margin:auto;
     align-items: center;
     justify-content: center;
     display: flex;
+  
 }
 
 

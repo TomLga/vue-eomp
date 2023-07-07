@@ -47,6 +47,16 @@ img{
     text-decoration: none;
     margin:auto 9px auto 9px;
 }
+.links:hover{
+  background-color: rgb(0, 0, 0);
+
+  color: red;
+  width: fit-content;
+  padding: 3px;
+  font-size: 25px;
+
+  
+}
 
 
 </style>

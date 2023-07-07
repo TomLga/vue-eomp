@@ -19,9 +19,24 @@
         </div>
     
         </form>
+        <div class="extraContact">
+            <p>Contact Me Directly:</p>
 
-
+            <div class="smallbox">
+              <a href="https://api.whatsapp.com/send?phone=270676273770" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/your_profile" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/your_username" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+    
+        </div>
     </main>
+
 
 </template>
 
@@ -83,6 +98,15 @@ input{
     outline-style:inset;
     outline-color: rgb(0, 0, 0);
     transform: rotate(10deg);
+}
+
+.extraContact{
+    width: 15rem;
+    border: 5px solid ;
+    padding: 9px;
+    margin: 9px auto;
+    
+    
 }
 
 @media only screen and (max-width: 1120px) {

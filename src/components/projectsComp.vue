@@ -16,13 +16,18 @@
           </div>
           <div class="flip-card-back">
               <p>{{ task.name }}</p> 
-            <button> {{ task.gitLink }}</button> 
-            <button>{{ task.netLink }}</button> 
+              <a :href="task.gitLink" target="_blank" class="btn btn-primary" style="margin: 4px;"> GitHub</a>
+              <a :href="task.netLink" target="_blank" class="btn btn-primary"> NetLify Live Link</a>
+           
           </div>
         </div>
       </div>
   </div>
   </div>
+
+
+  
+ 
   
 
  
@@ -46,7 +51,8 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 14px 14px 8px 0 rgba(0,0,0);
+  border: 2px solid ;
   
 }
 
@@ -65,13 +71,13 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  
   color: black;
 
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+
   color: white;
   transform: rotateY(180deg);
 }
@@ -90,6 +96,7 @@ span{
     float:start;
     font-style: italic;
     right: 20px;
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 400px){

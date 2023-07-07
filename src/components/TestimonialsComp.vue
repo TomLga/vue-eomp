@@ -1,11 +1,11 @@
 <template>
     <div>
      
-      <div class="container">
-        <div id="row" class="row">
-            <div id="card" class=" card" v-for="test in testimonials" :key="test.id" style="width: 18rem;">
-  <img :src="test.image" >
-  <div class="card-body">
+      <div id="slideOutAnimatio" class="container">
+        <div id="rowTest" class="row">
+            <div id="cardTest" class=" card" v-for="test in testimonials" :key="test.id" style="width: 18rem;">
+  <img :src="test.image" style="width:16rem; margin:9px auto" >
+  <div id="testTextBody" class="card-body">
     <h5 class="card-title">{{test.name}}</h5>
     <p class="card-textTest">{{test.msg}}</p>
   </div>
@@ -33,17 +33,16 @@
 </script>
 
 <style scoped>
-#row{
-    margin: auto;
+#testTextBody{
+    width: 16rem;
+
+}
+#rowTest{
+    margin: 40px auto;
     width: 70rem;
 }
-.card{
+#cardTest{
     margin: 3px auto;
-}
-img{
-    width: 15rem;
-    margin: 9px auto;
-
 }
 
 @media only screen and (max-width:310px) {
@@ -52,9 +51,6 @@ img{
         width: 9rem;
         margin: 9px auto;
     
-    }
-    .card-textTest{
-        width: 13rem;
     }
     #row{
         margin: auto;
@@ -65,19 +61,19 @@ img{
 }
 
 @media only screen and (max-width:1200px){
-    #row{
+    #rowTest{
         margin: auto;
         width: 40rem;
     }
 }
 @media only screen and (max-width:764px){
-    #row{
+    #rowTest{
         margin: auto;
         width: 30rem;
     }
 }
-@media only screen and (max-width:400px){
-    #row{
+@media only screen and (max-width:480px){
+    #rowTest{
         margin: auto;
         width: auto;
     }
