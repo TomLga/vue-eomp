@@ -32,10 +32,6 @@ export default {
 }
 #app>*{
   grid-column: -1/1;
-
-
 }
 
-
- 
 </style>
