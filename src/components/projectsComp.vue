@@ -16,7 +16,7 @@
           <div class="flip-card-back">
             <p>{{ task.name }}</p>
             <a :href="task.gitLink" target="_blank" class="btn btn-primary" style="margin: 4px;"> GitHub</a>
-            <a :href="task.netLink" target="_blank" class="btn btn-primary"> NetLify Live Link</a>
+            <a :href="task.netLink" target="_blank" class="btn btn-primary"> Live Link</a>
 
           </div>
         </div>

@@ -44,7 +44,7 @@
           <div class="card" style="height: 11.7rem;">
             <img src="https://i.postimg.cc/sXCHjC38/node-ja.jpg" style="width: 12rem; " class="card-img-topSkills" alt="Node.js Logo">
             <div class="card-bodySkills">
-              <p class="card-textSkills">-Beginner</p>
+              <p class="card-textSkills">-Intermediate</p>
             </div>
           </div>
         </div>
